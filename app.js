@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 //ROUTES
-const userRoutes = require('./routes/user')
+const userRoutes = require('./routes/user');
 
 
 const app = express();
@@ -14,6 +14,9 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-app.use('/', userRoutes);
+//DUMMY DATA TEST
+app.use('/', (req, res, next)=>{
+    res.json([1,2,3,4])
+});
 
 app.listen(port, ()=> {console.log( `Listening on port ${port}`)})
