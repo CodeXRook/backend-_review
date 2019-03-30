@@ -15,3 +15,5 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
 app.use('/', userRoutes);
+
+app.listen(port, ()=> {console.log( `Listening on port ${port}`)})
