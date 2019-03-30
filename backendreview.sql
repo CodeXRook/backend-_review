@@ -15,7 +15,7 @@ CREATE TABLE users (
 
 
 INSERT INTO users (userName, email, firstName, lastName) VALUES
-('vvickyb', 'vickyb@gmail.com', 'victoria','buchanan'),
-('rickybb', 'rickyb@gmail.com', 'ricky','tacos'),
-('mikemyers', 'mikemyers@gmail.com', 'mike','myers'),
-('poppyj', 'poppyj@gmail.com', 'poppy','jones');
+('bossman', 'vickyb@gmail.com', 'victoria','buchanan'),
+('zzboy', 'rickyb@gmail.com', 'ricky','tacos'),
+('gamegirl', 'mikemyers@gmail.com', 'mike','myers'),
+('jumpmanflee', 'poppyj@gmail.com', 'poppy','jones');
