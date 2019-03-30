@@ -4,4 +4,6 @@ const cors = require('cors');
 
 //ROUTES
 
-const userRoutes = require('')
+const userRoutes = require('./routes/user')
+
+const app = express();
