@@ -14,9 +14,13 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
+
+app.use('/user', userRoutes)
+
+
 //DUMMY DATA TEST
-app.use('/', (req, res, next)=>{
-    res.json([1,2,3,4])
-});
+// app.use('/', (req, res, next)=>{
+//     res.json([1,2,3,4])
+// });
 
 app.listen(port, ()=> {console.log( `Listening on port ${port}`)})
