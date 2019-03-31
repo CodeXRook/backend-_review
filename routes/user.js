@@ -11,4 +11,6 @@ userRouter.post ('/', (req, res, next)=>{
     .then(dta => {
         releaseEvents.json({success: `User created ${userName} ${email} ${firstName} ${lastName} `});
     })
-    .catch( )
+    .catch(err =>{
+        next(err);
+    })
