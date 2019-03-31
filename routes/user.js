@@ -7,4 +7,4 @@ userRouter.post ('/', (req, res, next)=>{
     const {userName, email, firstName, lastName } req.body;
 })
 
-    ueserSevices.create(userName)
+    ueserSevices.create(userName, email)
