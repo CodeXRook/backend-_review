@@ -9,5 +9,5 @@ userRouter.post ('/', (req, res, next)=>{
 
     ueserSevices.create(userName, email, firstName, lastName)
     .then(dta => {
-        releaseEvents.json({success: `User created ${ueerName} ${email}`})
+        releaseEvents.json({success: `User created ${userName} ${email} ${firstName} ${lastName} `});
     })
